@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F16E558E1DD8CE610086D4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E558D1DD8CE610086D4F0 /* AppDelegate.swift */; };
+		F16E55901DD8CE610086D4F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E558F1DD8CE610086D4F0 /* ViewController.swift */; };
+		F16E55931DD8CE610086D4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16E55911DD8CE610086D4F0 /* Main.storyboard */; };
+		F16E55961DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F16E55941DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld */; };
+		F16E55981DD8CE610086D4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16E55971DD8CE610086D4F0 /* Assets.xcassets */; };
+		F16E559B1DD8CE610086D4F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F16E558A1DD8CE610086D4F0 /* Transcriber_Siri_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcriber_Siri_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16E558D1DD8CE610086D4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F16E558F1DD8CE610086D4F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F16E55921DD8CE610086D4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F16E55951DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Transcriber_Siri_test.xcdatamodel; sourceTree = "<group>"; };
+		F16E55971DD8CE610086D4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F16E559A1DD8CE610086D4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F16E559C1DD8CE610086D4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F16E55871DD8CE610086D4F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F16E55811DD8CE610086D4F0 = {
+			isa = PBXGroup;
+			children = (
+				F16E558C1DD8CE610086D4F0 /* Transcriber_Siri_test */,
+				F16E558B1DD8CE610086D4F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F16E558B1DD8CE610086D4F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F16E558A1DD8CE610086D4F0 /* Transcriber_Siri_test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F16E558C1DD8CE610086D4F0 /* Transcriber_Siri_test */ = {
+			isa = PBXGroup;
+			children = (
+				F16E558D1DD8CE610086D4F0 /* AppDelegate.swift */,
+				F16E558F1DD8CE610086D4F0 /* ViewController.swift */,
+				F16E55911DD8CE610086D4F0 /* Main.storyboard */,
+				F16E55971DD8CE610086D4F0 /* Assets.xcassets */,
+				F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */,
+				F16E559C1DD8CE610086D4F0 /* Info.plist */,
+				F16E55941DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld */,
+			);
+			path = Transcriber_Siri_test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F16E55891DD8CE610086D4F0 /* Transcriber_Siri_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16E559F1DD8CE610086D4F0 /* Build configuration list for PBXNativeTarget "Transcriber_Siri_test" */;
+			buildPhases = (
+				F16E55861DD8CE610086D4F0 /* Sources */,
+				F16E55871DD8CE610086D4F0 /* Frameworks */,
+				F16E55881DD8CE610086D4F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transcriber_Siri_test;
+			productName = Transcriber_Siri_test;
+			productReference = F16E558A1DD8CE610086D4F0 /* Transcriber_Siri_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F16E55821DD8CE610086D4F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Andrei Palonski";
+				TargetAttributes = {
+					F16E55891DD8CE610086D4F0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QMNXFRSMX5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F16E55851DD8CE610086D4F0 /* Build configuration list for PBXProject "Transcriber_Siri_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F16E55811DD8CE610086D4F0;
+			productRefGroup = F16E558B1DD8CE610086D4F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F16E55891DD8CE610086D4F0 /* Transcriber_Siri_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F16E55881DD8CE610086D4F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16E559B1DD8CE610086D4F0 /* LaunchScreen.storyboard in Resources */,
+				F16E55981DD8CE610086D4F0 /* Assets.xcassets in Resources */,
+				F16E55931DD8CE610086D4F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F16E55861DD8CE610086D4F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16E55961DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld in Sources */,
+				F16E55901DD8CE610086D4F0 /* ViewController.swift in Sources */,
+				F16E558E1DD8CE610086D4F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F16E55911DD8CE610086D4F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F16E55921DD8CE610086D4F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F16E559A1DD8CE610086D4F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F16E559D1DD8CE610086D4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F16E559E1DD8CE610086D4F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F16E55A01DD8CE610086D4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QMNXFRSMX5;
+				INFOPLIST_FILE = Transcriber_Siri_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skrjApp.Transcriber-Siri-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F16E55A11DD8CE610086D4F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QMNXFRSMX5;
+				INFOPLIST_FILE = Transcriber_Siri_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skrjApp.Transcriber-Siri-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F16E55851DD8CE610086D4F0 /* Build configuration list for PBXProject "Transcriber_Siri_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16E559D1DD8CE610086D4F0 /* Debug */,
+				F16E559E1DD8CE610086D4F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16E559F1DD8CE610086D4F0 /* Build configuration list for PBXNativeTarget "Transcriber_Siri_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16E55A01DD8CE610086D4F0 /* Debug */,
+				F16E55A11DD8CE610086D4F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F16E55941DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F16E55951DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodel */,
+			);
+			currentVersion = F16E55951DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodel */;
+			path = Transcriber_Siri_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F16E55821DD8CE610086D4F0 /* Project object */;
+}
