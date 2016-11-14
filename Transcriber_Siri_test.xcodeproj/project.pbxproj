@@ -13,6 +13,8 @@
 		F16E55961DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F16E55941DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld */; };
 		F16E55981DD8CE610086D4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16E55971DD8CE610086D4F0 /* Assets.xcassets */; };
 		F16E559B1DD8CE610086D4F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */; };
+		F16E55A31DD8EF320086D4F0 /* TranscriptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E55A21DD8EF320086D4F0 /* TranscriptionsTableViewController.swift */; };
+		F16E55A51DDA592E0086D4F0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E55A41DDA592E0086D4F0 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F16E55971DD8CE610086D4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F16E559A1DD8CE610086D4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16E559C1DD8CE610086D4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16E55A21DD8EF320086D4F0 /* TranscriptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranscriptionsTableViewController.swift; sourceTree = "<group>"; };
+		F16E55A41DDA592E0086D4F0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				F16E558D1DD8CE610086D4F0 /* AppDelegate.swift */,
 				F16E558F1DD8CE610086D4F0 /* ViewController.swift */,
+				F16E55A21DD8EF320086D4F0 /* TranscriptionsTableViewController.swift */,
+				F16E55A41DDA592E0086D4F0 /* Utilities.swift */,
 				F16E55911DD8CE610086D4F0 /* Main.storyboard */,
 				F16E55971DD8CE610086D4F0 /* Assets.xcassets */,
 				F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */,
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16E55A31DD8EF320086D4F0 /* TranscriptionsTableViewController.swift in Sources */,
 				F16E55961DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld in Sources */,
 				F16E55901DD8CE610086D4F0 /* ViewController.swift in Sources */,
+				F16E55A51DDA592E0086D4F0 /* Utilities.swift in Sources */,
 				F16E558E1DD8CE610086D4F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
