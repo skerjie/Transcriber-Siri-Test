@@ -11,9 +11,9 @@ import AVFoundation
 import Speech
 
 class ViewController: UIViewController {
-
+  
   @IBOutlet weak var button: UIButton!
-
+  
   @IBOutlet weak var label: UILabel!
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -61,16 +61,10 @@ class ViewController: UIViewController {
       self.button.alpha = 0.3
     }
   }
-
+  
   @IBAction func buttonClecked(_ sender: Any) {
     requestRecordPermissions()
   }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 
 }
 

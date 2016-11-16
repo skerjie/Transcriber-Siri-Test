@@ -15,6 +15,9 @@
 		F16E559B1DD8CE610086D4F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */; };
 		F16E55A31DD8EF320086D4F0 /* TranscriptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E55A21DD8EF320086D4F0 /* TranscriptionsTableViewController.swift */; };
 		F16E55A51DDA592E0086D4F0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E55A41DDA592E0086D4F0 /* Utilities.swift */; };
+		F16E55A71DDA5CE40086D4F0 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E55A61DDA5CE40086D4F0 /* RecordViewController.swift */; };
+		F16E55AA1DDC4DFF0086D4F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16E55A91DDC4DFF0086D4F0 /* CoreData.framework */; };
+		F16E55AC1DDC4E610086D4F0 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16E55AB1DDC4E610086D4F0 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F16E559C1DD8CE610086D4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16E55A21DD8EF320086D4F0 /* TranscriptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranscriptionsTableViewController.swift; sourceTree = "<group>"; };
 		F16E55A41DDA592E0086D4F0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F16E55A61DDA5CE40086D4F0 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		F16E55A91DDC4DFF0086D4F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F16E55AB1DDC4E610086D4F0 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelper.swift; path = ../CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16E55AA1DDC4DFF0086D4F0 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,7 @@
 			children = (
 				F16E558C1DD8CE610086D4F0 /* Transcriber_Siri_test */,
 				F16E558B1DD8CE610086D4F0 /* Products */,
+				F16E55A81DDC4DFF0086D4F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +71,9 @@
 				F16E558D1DD8CE610086D4F0 /* AppDelegate.swift */,
 				F16E558F1DD8CE610086D4F0 /* ViewController.swift */,
 				F16E55A21DD8EF320086D4F0 /* TranscriptionsTableViewController.swift */,
+				F16E55A61DDA5CE40086D4F0 /* RecordViewController.swift */,
 				F16E55A41DDA592E0086D4F0 /* Utilities.swift */,
+				F16E55AB1DDC4E610086D4F0 /* CoreDataHelper.swift */,
 				F16E55911DD8CE610086D4F0 /* Main.storyboard */,
 				F16E55971DD8CE610086D4F0 /* Assets.xcassets */,
 				F16E55991DD8CE610086D4F0 /* LaunchScreen.storyboard */,
@@ -71,6 +81,14 @@
 				F16E55941DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld */,
 			);
 			path = Transcriber_Siri_test;
+			sourceTree = "<group>";
+		};
+		F16E55A81DDC4DFF0086D4F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F16E55A91DDC4DFF0086D4F0 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +167,8 @@
 				F16E55A31DD8EF320086D4F0 /* TranscriptionsTableViewController.swift in Sources */,
 				F16E55961DD8CE610086D4F0 /* Transcriber_Siri_test.xcdatamodeld in Sources */,
 				F16E55901DD8CE610086D4F0 /* ViewController.swift in Sources */,
+				F16E55AC1DDC4E610086D4F0 /* CoreDataHelper.swift in Sources */,
+				F16E55A71DDA5CE40086D4F0 /* RecordViewController.swift in Sources */,
 				F16E55A51DDA592E0086D4F0 /* Utilities.swift in Sources */,
 				F16E558E1DD8CE610086D4F0 /* AppDelegate.swift in Sources */,
 			);

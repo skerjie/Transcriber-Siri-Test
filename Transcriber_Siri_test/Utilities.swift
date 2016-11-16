@@ -11,13 +11,15 @@ import Foundation
 
 class Utilities {
   
-  static func getDocsDirectory() -> URL {
+  var dateTimeString: String?
+  
+  func getDocsDirectory() -> URL {
     let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
     let docsDirect = paths[0]
     return docsDirect
   }
   
-  static func getAudioFileUrl () -> URL? {
+  func getAudioFileUrl () -> URL? {
     
     do {
       let audioURL = try getDocsDirectory().appendingPathComponent(getDateAndTime() + ".m4a")
@@ -27,7 +29,20 @@ class Utilities {
     }
   }
   
-  static func getDateAndTime() -> String {
+  func getTextFileUrl () -> URL? {
+    
+    do {
+      let textURL = try getDocsDirectory().appendingPathComponent(getDateAndTime() + ".txt")
+      return textURL
+    } catch _ {
+      return nil
+    }
+  }
+  
+  func getDateAndTime() -> String {
+    if let dateT = dateTimeString {
+      return dateT
+    }
     let date = Date()
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd-HH-mm-ss"

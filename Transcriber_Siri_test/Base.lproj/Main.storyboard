@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,11 +52,71 @@
                             <outlet property="delegate" destination="7y3-fv-AnI" id="sAb-Tb-UD3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Transcriptions" id="1Zp-fs-vVc"/>
+                    <navigationItem key="navigationItem" title="Transcriptions" id="1Zp-fs-vVc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wdn-Zr-I9T">
+                            <connections>
+                                <segue destination="29m-di-TDt" kind="show" id="ncQ-xh-dWt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ray-QC-m1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="182" y="-21"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="Vwj-Pt-n0i">
+            <objects>
+                <viewController id="29m-di-TDt" customClass="RecordViewController" customModule="Transcriber_Siri_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pxb-wE-e0U"/>
+                        <viewControllerLayoutGuide type="bottom" id="udU-l3-kZY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ue0-1G-ssf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIK-zj-dZk">
+                                <rect key="frame" x="63" y="118" width="195" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Stop Recording">
+                                    <color key="titleColor" red="1" green="0.54188713170000002" blue="0.4001609397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonClicked:" destination="29m-di-TDt" eventType="touchUpInside" id="ZIA-is-3j3"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tDZ-Pi-I4P">
+                                <rect key="frame" x="150" y="81" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8MQ-wm-A6g">
+                                <rect key="frame" x="16" y="166" width="288" height="353"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8MQ-wm-A6g" firstAttribute="leading" secondItem="ue0-1G-ssf" secondAttribute="leadingMargin" id="58D-BE-nER"/>
+                            <constraint firstItem="8MQ-wm-A6g" firstAttribute="top" secondItem="BIK-zj-dZk" secondAttribute="bottom" id="MYu-uj-JGi"/>
+                            <constraint firstItem="BIK-zj-dZk" firstAttribute="top" secondItem="tDZ-Pi-I4P" secondAttribute="bottom" constant="17" id="TCC-2e-ann"/>
+                            <constraint firstItem="BIK-zj-dZk" firstAttribute="centerX" secondItem="ue0-1G-ssf" secondAttribute="centerX" id="YXw-wL-etq"/>
+                            <constraint firstItem="udU-l3-kZY" firstAttribute="top" secondItem="8MQ-wm-A6g" secondAttribute="bottom" id="l46-ES-Vhz"/>
+                            <constraint firstItem="tDZ-Pi-I4P" firstAttribute="top" secondItem="Pxb-wE-e0U" secondAttribute="bottom" constant="17" id="osb-8P-SGa"/>
+                            <constraint firstItem="tDZ-Pi-I4P" firstAttribute="centerX" secondItem="ue0-1G-ssf" secondAttribute="centerX" id="yRs-Sc-PKQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8MQ-wm-A6g" secondAttribute="trailing" id="yiy-Nf-Mzs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="tDZ-Pi-I4P" id="79n-VT-PBN"/>
+                        <outlet property="textView" destination="8MQ-wm-A6g" id="ULG-6J-JNt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edl-bX-1wD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="-21"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -106,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-285" y="-719"/>
+            <point key="canvasLocation" x="-699" y="-755"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Dr-Vb-eAV">
